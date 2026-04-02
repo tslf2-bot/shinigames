@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINIGAMES| Домашняя страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">SHINIGAMES</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="games.html" class="nav-link">Игры</a></li>
+            <li class="nav-item"><a href="careers.html" class="nav-link">Карьера</a></li>
+            <li class="nav-item"><a href="support.html" class="nav-link">Поддержка</a></li>
+        </ul>
+        
+        <!-- Для неавторизованных -->
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-outline btn-small">Войти</a>
+            <a href="register.html" class="btn btn-primary btn-small">Регистрация</a>
+        </div>
+        
+        <!-- Для авторизованных -->
+        <div class="nav-auth auth-user" style="display: none;">
+            <a href="profile.html" class="nav-link user-welcome">Добро пожаловать, <span id="user-name">Пользователь</span>!</a>
+            <button class="btn btn-outline btn-small" id="logout-btn">Выйти</button>
+        </div>
+        
+        <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+    <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <h1>СОЗДАЕМ МИРЫ, КОТОРЫЕ ВДОХНОВЛЯЮТ</h1>
+        <p>Мы — Shinigames. Наша страсть — создание незабываемых игровых вселенных.</p>
+        <a href="games.html" class="btn btn-primary">Смотреть игры</a>
+    </div>
+    </section>
+
+    <!-- Секция "Последние новости" -->
+    <section class="news-preview">
+        <div class="container">
+            <h2>Последние новости</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image-placeholder">
+                        <img src="images/i (8).webp" alt="Новое обновление игры">
+                    </div>
+                    <h3>Обновление 2.0 выходит на следующей неделе</h3>
+                    <p>Огромное обновление с новым контентом и исправлениями.</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-image-placeholder">
+                        <img src="images/_9ttIBG39hFZR4ngYXv5dS.jpg" alt="Новое обновление игры">
+                    </div>
+                    <h3>Кибеспортал Championship 2024</h3>
+                    <p>Регистрация на главный турнир года открыта.</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-image-placeholder">
+                        <img src="images/e105661446d8893219a445ca6468beb9.jpg" alt="Новое обновление игры">
+                    </div>
+                    <h3>За кулисами: искусство и звук</h3>
+                    <p>Узнайте, как создавалось аудиовизуальное оформление нашей последней игры.</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SHINIGAMES. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Кодекс поведения</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="video-hero.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINIGAMES | Карьера</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">SHINIGAMES</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="games.html" class="nav-link">Игры</a></li>
+                <li class="nav-item"><a href="careers.html" class="nav-link active">Карьера</a></li>
+                <li class="nav-item"><a href="support.html" class="nav-link">Поддержка</a></li>
+            </ul>
+            
+            
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-outline btn-small">Войти</a>
+                <a href="register.html" class="btn btn-primary btn-small">Регистрация</a>
+            </div>
+            
+            
+            <div class="nav-auth auth-user" style="display: none;">
+                <a href="profile.html" class="nav-link user-welcome">Добро пожаловать, <span id="user-name">Пользователь</span>!</a>
+                <button class="btn btn-outline btn-small" id="logout-btn">Выйти</button>
+            </div>
+            
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section class="careers-hero">
+       
+        <div class="container">
+            <h1>СТАНЬТЕ ЧАСТЬЮ НАШЕЙ КОМАНДЫ</h1>
+            <p>Создавайте великие игры вместе с нами</p>
+            <a href="#vacancies" class="btn btn-primary">Смотреть вакансии</a>
+        </div>
+    </section>
+
+    <section class="about-culture">
+        <div class="container">
+            <div class="culture-grid">
+                <div class="culture-content">
+                    <h2>НАША КУЛЬТУРА</h2>
+                    <p>В BlackBox Games мы верим, что лучшие игры создаются страстными людьми, которые любят то, что они делают. Мы создаем среду, где креативность и инновации процветают.</p>
+                    
+                    <div class="culture-features">
+                        <div class="culture-feature">
+                            <h3> Инновации</h3>
+                            <p>Мы постоянно исследуем новые технологии и подходы к геймдеву</p>
+                        </div>
+                        <div class="culture-feature">
+                            <h3> Коллаборация</h3>
+                            <p>Междисциплинарные команды работают вместе для достижения лучших результатов</p>
+                        </div>
+                        <div class="culture-feature">
+                            <h3> Развитие</h3>
+                            <p>Инвестируем в профессиональный рост каждого сотрудника</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="culture-image">
+                    <div class="images/29737.jpg" style="background-color: #2a2a2a; height: 400px; display: flex; align-items: center; justify-content: center; color: var(--color-lighter-gray);">
+                        [Фото офиса или команды]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="container">
+            <h2>МЫ ЗАБОТИМСЯ О НАШИХ СОТРУДНИКАХ</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Конкурентная зарплата</h3>
+                    <p>Достойное вознаграждение за ваш труд и экспертизу</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Медицинская страховка</h3>
+                    <p>Полный пакет медицинского обслуживания для вас и семьи</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Обучение и развитие</h3>
+                    <p>Курсы, конференции и внутренние воркшопы</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Игровая комната</h3>
+                    <p>Отдыхайте и играйте в самые современные игры</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Гибкий график</h3>
+                    <p>Возможность удаленной работы и гибкого расписания</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Питание</h3>
+                    <p>Бесплатные обеды и снеки в офисе</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vacancies" class="vacancies-section">
+        <div class="container">
+            <h2>ОТКРЫТЫЕ ВАКАНСИИ</h2>
+            <div class="vacancies-filter">
+                <button class="filter-btn active" data-department="all">Все отделы</button>
+                <button class="filter-btn" data-department="programming">Программирование</button>
+                <button class="filter-btn" data-department="art">Арт</button>
+                <button class="filter-btn" data-department="design">Дизайн</button>
+                <button class="filter-btn" data-department="qa">Тестирование</button>
+            </div>
+            
+            <div class="vacancies-list">
+                <div class="vacancy-card" data-department="programming">
+                    <div class="vacancy-info">
+                        <h3>Senior Game Developer (C++)</h3>
+                        <p class="vacancy-department">Программирование • Москва/Удаленно</p>
+                        <p class="vacancy-description">Ищем опытного разработчика для работы над ядром нашего нового AAA-проекта. Требуется глубокое знание C++ и опыт работы с Unreal Engine 5.</p>
+                        <div class="vacancy-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Unreal Engine 5</span>
+                            <span class="tag">Multiplayer</span>
+                        </div>
+                    </div>
+                    <div class="vacancy-actions">
+                        <a href="#apply" class="btn btn-primary">Откликнуться</a>
+                    </div>
+                </div>
+                
+                <div class="vacancy-card" data-department="art">
+                    <div class="vacancy-info">
+                        <h3>3D Character Artist</h3>
+                        <p class="vacancy-department">Арт • Санкт-Петербург</p>
+                        <p class="vacancy-description">Создание высококачественных 3D-моделей персонажей для наших проектов. Работа в команде с концепт-артистами и аниматорами.</p>
+                        <div class="vacancy-tags">
+                            <span class="tag">ZBrush</span>
+                            <span class="tag">Maya</span>
+                            <span class="tag">Substance Painter</span>
+                        </div>
+                    </div>
+                    <div class="vacancy-actions">
+                        <a href="#apply" class="btn btn-primary">Откликнуться</a>
+                    </div>
+                </div>
+                
+                <div class="vacancy-card" data-department="design">
+                    <div class="vacancy-info">
+                        <h3>Game Designer</h3>
+                        <p class="vacancy-department">Дизайн • Москва</p>
+                        <p class="vacancy-description">Проектирование игровых механик, балансировка и создание увлекательного игрового опыта. Опыт работы над мобильными или PC проектами.</p>
+                        <div class="vacancy-tags">
+                            <span class="tag">Game Design</span>
+                            <span class="tag">Balance</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                    </div>
+                    <div class="vacancy-actions">
+                        <a href="#apply" class="btn btn-primary">Откликнуться</a>
+                    </div>
+                </div>
+                
+                <div class="vacancy-card" data-department="qa">
+                    <div class="vacancy-info">
+                        <h3>QA Engineer</h3>
+                        <p class="vacancy-department">Тестирование • Удаленно</p>
+                        <p class="vacancy-description">Тестирование игровых функций, поиск и документирование багов. Работа в тесной связке с разработчиками.</p>
+                        <div class="vacancy-tags">
+                            <span class="tag">Testing</span>
+                            <span class="tag">JIRA</span>
+                            <span class="tag">Game Testing</span>
+                        </div>
+                    </div>
+                    <div class="vacancy-actions">
+                        <a href="#apply" class="btn btn-primary">Откликнуться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application-section">
+        <div class="container">
+            <div class="application-card">
+                <h2>НЕТ ПОДХОДЯЩЕЙ ВАКАНСИИ?</h2>
+                <p>Отправьте нам свое резюме, и мы свяжемся с вами, когда появится подходящая позиция</p>
+                <form class="application-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="full-name">Полное имя</label>
+                            <input type="text" id="full-name" name="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="application-email">Email</label>
+                            <input type="email" id="application-email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Желаемая позиция</label>
+                        <input type="text" id="position" name="position" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Резюме (PDF, DOC)</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cover-letter">Сопроводительное письмо</label>
+                        <textarea id="cover-letter" name="cover-letter" rows="5" placeholder="Расскажите о себе и почему вы хотите работать с нами..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SHINIGAMES. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Кодекс поведения</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="careers.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

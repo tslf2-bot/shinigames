@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINIGAMES | Cyber Realm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">SHINIGAMES</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="games.html" class="nav-link">Игры</a></li>
+            <li class="nav-item"><a href="careers.html" class="nav-link">Карьера</a></li>
+            <li class="nav-item"><a href="support.html" class="nav-link">Поддержка</a></li>
+        </ul>
+        
+        <!-- Для неавторизованных пользователей -->
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-outline btn-small">Войти</a>
+            <a href="register.html" class="btn btn-primary btn-small">Регистрация</a>
+        </div>
+        
+        <!-- Для авторизованных пользователей -->
+        <div class="nav-auth auth-user" style="display: none;">
+            <a href="profile.html" class="nav-link user-welcome">Добро пожаловать, <span id="user-name">Пользователь</span>!</a>
+            <button class="btn btn-outline btn-small" id="logout-btn">Выйти</button>
+        </div>
+        
+        <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+    <section class="game-hero">
+        <div class="game-hero-content">
+            <h1>CYBER REALM</h1>
+            <p>Будущее уже наступило. Сразитесь за свое место в неоновых джунглях мегаполиса.</p>
+            <a href="#download" class="btn btn-primary">Скачать бесплатно</a>
+        </div>
+    </section>
+
+    
+
+    <section class="game-about">
+        <div class="container">
+            <h2>ОБ ИГРЕ</h2>
+            <p>Cyber Realm — это бесплатный тактический шутер от первого лица, действие которого разворачивается в ближайшем будущем. Соберите команду и проявите тактику в динамичных сражениях, где каждый раунд — это новая возможность переломить ход битвы.</p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Тактические способности</h3>
+                    <p>У каждого агента есть уникальный набор способностей, требующий стратегического мышления.</p>
+                </div>
+                <div class="feature">
+                    <h3>Эпические сражения</h3>
+                    <p>Сражайтесь на тщательно проработанных картах по всему киберпанк-мегаполису.</p>
+                </div>
+                <div class="feature">
+                    <h3>Живое сообщество</h3>
+                    <p>Присоединяйтесь к миллионам игроков по всему миру.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-screenshots">
+        <div class="container">
+            <h2>СКРИНШОТЫ</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-placeholder">
+                    <img src="images/cbc999517db182cdfd168d4934a1e8fe.jpg" alt="Новое обновление игры">
+                </div>
+                <div class="screenshot-placeholder">
+                    <img src="images/cbc999517db182cdfd168d4934a1e8fe.jpg" alt="Новое обновление игры">
+                </div>
+                <div class="screenshot-placeholder">
+                    <img src="images/cbc999517db182cdfd168d4934a1e8fe.jpg" alt="Новое обновление игры">
+                </div>
+                <div class="screenshot-placeholder">
+                    <img src="images/cbc999517db182cdfd168d4934a1e8fe.jpg" alt="Новое обновление игры">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="game-download">
+        <div class="container">
+            <h2>ГОТОВЫ СРАЖАТЬСЯ?</h2>
+            <p>Скачайте Cyber Realm бесплатно и начните свой путь уже сегодня.</p>
+            <a href="#" class="btn btn-large btn-primary">Скачать для Windows</a>
+            <div class="system-requirements">
+                <h3>Системные требования</h3>
+                <div class="requirements-grid">
+                    <div class="requirement">
+                        <h4>МИНИМАЛЬНЫЕ:</h4>
+                        <p>ОС: Windows 10 (64-битная)<br>
+                           Процессор: Intel Core i3-4150<br>
+                           Память: 8 GB ОЗУ<br>
+                           Видеокарта: GeForce GT 730</p>
+                    </div>
+                    <div class="requirement">
+                        <h4>РЕКОМЕНДУЕМЫЕ:</h4>
+                        <p>ОС: Windows 10/11 (64-битная)<br>
+                           Процессор: Intel Core i5-9400F<br>
+                           Память: 16 GB ОЗУ<br>
+                           Видеокарта: GeForce GTX 1660</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SHINIGAMES. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Кодекс поведения</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

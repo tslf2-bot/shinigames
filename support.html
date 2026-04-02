@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINIGAMES| Поддержка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">SHINIGAMES</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="games.html" class="nav-link">Игры</a></li>
+                <li class="nav-item"><a href="careers.html" class="nav-link">Карьера</a></li>
+                <li class="nav-item"><a href="support.html" class="nav-link active">Поддержка</a></li>
+            </ul>
+            
+            <!-- Для неавторизованных -->
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-outline btn-small">Войти</a>
+                <a href="register.html" class="btn btn-primary btn-small">Регистрация</a>
+            </div>
+            
+            <!-- Для авторизованных -->
+            <div class="nav-auth auth-user" style="display: none;">
+                <a href="profile.html" class="nav-link user-welcome">Добро пожаловать, <span id="user-name">Пользователь</span>!</a>
+                <button class="btn btn-outline btn-small" id="logout-btn">Выйти</button>
+            </div>
+            
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="support-hero">
+        <div class="container">
+            <h1>ЦЕНТР ПОДДЕРЖКИ</h1>
+            <p>Мы здесь, чтобы помочь вам с любыми вопросами и проблемами</p>
+        </div>
+    </section>
+
+    <section class="support-search">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Поиск по часто задаваемым вопросам..." id="support-search">
+                <button class="btn btn-primary">Найти</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-categories">
+        <div class="container">
+            <h2>КАТЕГОРИИ ПОМОЩИ</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"></div>
+                    <h3>Технические проблемы</h3>
+                    <p>Проблемы с запуском игр, графикой, производительностью</p>
+                    <a href="#technical" class="btn btn-outline">Посмотреть</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"></div>
+                    <h3>Платежи и биллинг</h3>
+                    <p>Вопросы по покупкам, возвратам и платежным системам</p>
+                    <a href="#billing" class="btn btn-outline">Посмотреть</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"></div>
+                    <h3>Учетная запись</h3>
+                    <p>Восстановление доступа, смена данных, безопасность</p>
+                    <a href="#account" class="btn btn-outline">Посмотреть</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"></div>
+                    <h3>Игровой процесс</h3>
+                    <p>Вопросы по геймплею, баги, предложения по улучшению</p>
+                    <a href="#gameplay" class="btn btn-outline">Посмотреть</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как восстановить доступ к аккаунту?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Если вы забыли пароль, на странице входа нажмите "Забыли пароль". Вам на email будет отправлена ссылка для сброса пароля. Если вы не помните email, свяжитесь с нашей службой поддержки.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие системные требования для Cyber Realm?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Минимальные требования:</strong> Windows 10, Intel Core i3-4150, 8GB RAM, GeForce GT 730<br>
+                           <strong>Рекомендуемые:</strong> Windows 10/11, Intel Core i5-9400F, 16GB RAM, GeForce GTX 1660</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как вернуть покупку?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Возврат возможен в течение 14 дней с момента покупки, если вы провели в игре менее 2 часов. Для оформления возврата напишите в поддержку с указанием номера заказа и причины возврата.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Игра вылетает при запуске, что делать?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>1. Обновите драйверы видеокарты<br>
+                           2. Проверьте целостность файлов игры через лаунчер<br>
+                           3. Отключите антивирус на время запуска<br>
+                           4. Запустите игру от имени администратора</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-support">
+        <div class="container">
+            <div class="contact-card">
+                <h2>НЕ НАШЛИ ОТВЕТ?</h2>
+                <p>Наша служба поддержки готова помочь вам 24/7</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon"></div>
+                        <h4>Email поддержка</h4>
+                        <p>support@SHINIGAMES.com</p>
+                        <p>Ответ в течение 24 часов</p>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon"></div>
+                        <h4>Онлайн-чат</h4>
+                        <p>Круглосуточная поддержка</p>
+                        <button class="btn btn-primary">Начать чат</button>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon"></div>
+                        <h4>Телефон</h4>
+                        <p>8-800-555-35-35</p>
+                        <p>Пн-Пт: 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SHINIGAMES. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Кодекс поведения</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="support.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINIGAMES | Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">SHINIGAMES</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="games.html" class="nav-link">Игры</a></li>
+                <li class="nav-item"><a href="#careers" class="nav-link">Карьера</a></li>
+                <li class="nav-item"><a href="#support" class="nav-link">Поддержка</a></li>
+            </ul>
+            <div class="nav-auth auth-user">
+                <a href="profile.html" class="nav-link user-welcome">Добро пожаловать, <span id="user-name">Пользователь</span>!</a>
+                <button class="btn btn-outline btn-small" id="logout-btn">Выйти</button>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Обновите эту секцию в profile.html -->
+<section class="profile-section">
+    <div class="container">
+        <div class="profile-header">
+            <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+            <p>Управляйте своей учетной записью</p>
+        </div>
+
+        <div class="profile-content">
+            <!-- Боковая панель -->
+            <div class="profile-sidebar">
+                <div class="user-card">
+                    <div class="user-avatar">
+                        <div class="avatar-placeholder" id="user-avatar">U</div>
+                    </div>
+                    <h3 id="display-username">Загрузка...</h3>
+                    <p class="user-email" id="display-email">Загрузка...</p>
+                    <p class="member-since">Участник с <span id="member-since">2024</span></p>
+                </div>
+                
+                <nav class="profile-nav">
+                    <button class="profile-nav-btn active" data-tab="overview">Обзор</button>
+                    <button class="profile-nav-btn" data-tab="games">Мои игры</button>
+                    <button class="profile-nav-btn" data-tab="settings">Настройки</button>
+                </nav>
+            </div>
+
+            <!-- Основной контент -->
+            <div class="profile-main">
+                <!-- Вкладка Обзор -->
+                <div class="tab-content active" id="overview-tab">
+                    <h2>ДОБРО ПОЖАЛОВАТЬ!</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Игровое время</h3>
+                            <p class="stat-value">24 ч</p>
+                            <p class="stat-label">за все время</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Достижения</h3>
+                            <p class="stat-value">5/50</p>
+                            <p class="stat-label">разблокировано</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Уровень</h3>
+                            <p class="stat-value">15</p>
+                            <p class="stat-label">в сообществе</p>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity">
+                        <h3>Последняя активность</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <span class="activity-icon"></span>
+                                <div class="activity-content">
+                                    <p>Запущена игра <strong>Cyber Realm</strong></p>
+                                    <span class="activity-time">2 часа назад</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-icon"></span>
+                                <div class="activity-content">
+                                    <p>Получено достижение "Первая кровь"</p>
+                                    <span class="activity-time">Вчера</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладка Мои игры -->
+                <div class="tab-content" id="games-tab">
+                    <h2>МОИ ИГРЫ</h2>
+                    <div class="games-library">
+                        <div class="library-game">
+                            <div class="game-icon" style="background-color: #2a2a2a;"></div>
+                            <div class="game-info">
+                                <h4>Cyber Realm</h4>
+                                <p>Время игры: <span>18 часов</span></p>
+                                <div class="game-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%"></div>
+                                    </div>
+                                    <span>65% выполнено</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline btn-small">Запустить</button>
+                        </div>
+                        <div class="library-game">
+                            <div class="game-icon" style="background-color: #333;"></div>
+                            <div class="game-info">
+                                <h4>Legend of the Ancients</h4>
+                                <p>Время игры: <span>6 часов</span></p>
+                                <div class="game-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 30%"></div>
+                                    </div>
+                                    <span>30% выполнено</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline btn-small">Запустить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладка Настройки -->
+                <div class="tab-content" id="settings-tab">
+                    <h2>НАСТРОЙКИ АККАУНТА</h2>
+                    <div class="settings-info">
+                        <p><strong>Имя пользователя:</strong> <span id="settings-username">Загрузка...</span></p>
+                        <p><strong>Email:</strong> <span id="settings-email">Загрузка...</span></p>
+                        <p><strong>Дата регистрации:</strong> <span id="settings-created">Загрузка...</span></p>
+                    </div>
+                    <button class="btn btn-primary" onclick="auth.logout()">Выйти из аккаунта</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SHINIGAMES. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Кодекс поведения</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
